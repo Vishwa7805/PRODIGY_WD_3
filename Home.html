@@ -1,0 +1,301 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Shop</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="Home.css">
+    <!-- Google Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Lilita+One&family=Madimi+One&family=Patua+One&family=Play&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Russo+One&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+
+    <header class="nav_bar_container">
+        <ul class="nav_bar">
+            <li class="nav_elements">Home</li>
+            <li class="nav_elements">Shop</li>
+            <li class="nav_elements">Blog</li>
+            <li class="nav_elements">Pages</li>
+            <li class="nav_elements">Contacts</li>
+        </ul>
+        <div class="nav_bar_others">
+            <div class="search_bar_container">
+                <input type="text" class="search_bar" placeholder="Search">
+                <i class="bx bx-search"></i>
+            </div>
+            <button class="signup">SignUp</button>
+        </div>
+        <i class='bx bx-menu' id="bx-menu" onclick="showSidebar()"></i>
+    </header>
+
+    <!-- Side Bar -->
+
+     <section class="side_bar">
+        <div class="sb_search_bar_main">
+            <input type="text" class="sb_search_bar" placeholder="Search">
+            <i class="bx bx-search sb_search"></i>
+            <i class='bx bx-x' onclick="hideSidebar()"></i>
+        </div>
+        <ul class="side_bar_elements">
+            <li class="side_bar_element">Home</li>
+            <li class="side_bar_element">Shop</li>
+            <li class="side_bar_element">Blog</li>
+            <li class="side_bar_element">Pages</li>
+            <li class="side_bar_element">Contacts</li>
+        </ul>
+        <button class="side_bar_signup">SignUp</button>
+     </section>
+
+    <!-- Description Section -->
+
+    <section class="desc_section">
+        <img src="Images/FrontImage.webp" alt="" class="desc_image">
+        <div class="desc_box">
+            <h1 class="desc_title">Fresh Grocery</h1>
+            <p>Welcome to your one-stop online store for fresh groceries. Explore a wide range of quality products, from
+                fresh produce to pantry staples. Enjoy convenient delivery, great savings, and a hassle-free shopping
+                experience. Shop with us today!</p>
+            <button class="view_more">VIEW MORE</button>
+        </div>
+        <div class="desc_more">
+            <div class="desc_more_element">
+                <img src="Images/ban1.webp" alt="">
+                <div class="dme_box dme_box1">
+                    <p class="dme_title">Grocery</p>
+                    <p class="dme_desc">Fresh Grocery Delivered</p>
+                </div>
+            </div>
+            <div class="desc_more_element">
+                <img src="Images/bans2.webp" alt="">
+                <div class="dme_box dme_box1">
+                    <p class="dme_title">Salads</p>
+                    <p class="dme_desc">Fresh Grocery Delivered</p>
+                </div>
+            </div>
+            <div class="desc_more_element">
+                <img src="Images/bans3.webp" alt="">
+                <div class="dme_box dme_box1">
+                    <p class="dme_title">Cart</p>
+                    <p class="dme_desc">Fresh Grocery Delivered</p>
+                </div>
+            </div>
+            <div class="desc_more_element">
+                <img src="Images/bans4.webp" alt="">
+                <div class="dme_box">
+                    <p class="dme_title">Support</p>
+                    <p class="dme_desc">Fresh Grocery Delivered</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+
+    <section class="offer_container">
+        <div class="offer_box">
+            <div class="products">
+                <div class="pd_1">
+                    <p class="pd_1_t1">Organically</p>
+                    <h2 class="pd_1_t2">ORGANIC VEGETABLES</h2>
+                    <p class="pd_1_t3">Best For Health</p>
+                    <button class="view_more_2">VIEW MORE</button>
+                </div>
+                <div class="pd_2"></div>
+                <img src="Images/main1.webp" alt="">
+            </div>
+            <div class="products">
+                <div class="pd_1">
+                    <p class="pd_1_t1">Explore Seasonal</p>
+                    <h2 class="pd_1_t2">HEALTHY &<br>FRESH</h2>
+                    <p class="pd_1_t3">Best For Health</p>
+                    <button class="view_more_2">VIEW MORE</button>
+                </div>
+                <div class="pd_2"></div>
+                <img src="Images/main2.webp" alt="">
+            </div>
+            <div class="products">
+                <div class="pd_1">
+                    <p class="pd_1_t1">Explore Seasonal</p>
+                    <h2 class="pd_1_t2">NATURAL<br>FRUITS</h2>
+                    <p class="pd_1_t3">Best For Health</p>
+                    <button class="view_more_2">VIEW MORE</button>
+                </div>
+                <div class="pd_2"></div>
+                <img src="Images/main3.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop By Category -->
+        <section class="sbc">
+            <h1 class="sbc_h1">Shop By Category</h1>
+            <ul class="sbc_nav_bar">
+                <li class="sbc_nav_bar_element nav_vegetable" onclick="displayVegetables()">Vegetables</li>
+                <li class="sbc_nav_bar_element nav_fruits" onclick="displayFruits()">Fruits</li>
+                <li class="sbc_nav_bar_element nav_freshnuts" onclick="displayfreshnuts()">Freshnuts</li>
+                <li class="sbc_nav_bar_element nav_leafygreen" onclick="displayleafygreen()">Leafygreen</li>
+                <li class="sbc_nav_bar_element nav_root" onclick="displayroot()">Root</li>
+                <span class="navigator"></span>
+            </ul>
+            <div class="sbc_product_container_main">
+                <div class="sbc_product_container vegetable_container">
+                    <div class="sbc_product vegetable">
+                        <img src="Images/veg1.jpg" alt="">
+                        <h2>Ladies Finger</h2>
+                        <p>₹100</p>
+                    </div>
+                    <div class="sbc_product vegetable">
+                        <img src="Images/veg2.jpg" alt="">
+                        <h2>Brocoli</h2>
+                        <p>₹100</p>
+                    </div>
+                    <div class="sbc_product vegetable">
+                        <img src="Images/veg3.jpg" alt="">
+                        <h2>Cauliflower</h2>
+                        <p>₹100</p>
+                    </div>
+                    <div class="sbc_product vegetable">
+                        <img src="Images/veg4.jpg" alt="">
+                        <h2>Tomato</h2>
+                        <p>₹100</p>
+                    </div>
+                </div>
+                <div class="sbc_product_container fruits_container">
+                    <div class="sbc_product fruits">
+                        <img src="Images/fruit1.jpg" alt="">
+                        <h2>Apple</h2>
+                        <p>₹100</p>
+                    </div>
+                    <div class="sbc_product fruits">
+                        <img src="Images/fruit2.jpg" alt="">
+                        <h2>Pomegranate</h2>
+                        <p>₹100</p>
+                    </div>
+                    <div class="sbc_product fruits">
+                        <img src="Images/fruit3.jpg" alt="">
+                        <h2>strawberry</h2>
+                        <p>₹100</p>
+                    </div>
+                    <div class="sbc_product fruits">
+                        <img src="Images/fruit4.jpeg" alt="">
+                        <h2>Banana</h2>
+                        <p>₹100</p>
+                    </div>
+                </div>
+                <div class="sbc_product_container freshnuts_container">
+                    <div class="sbc_product freshnuts">
+                        <img src="Images/nuts1.webp" alt="">
+                        <h2>Pista</h2>
+                        <p>₹100</p>
+                    </div>
+                    <div class="sbc_product freshnuts">
+                        <img src="Images/nuts2.webp" alt="">
+                        <h2>Almond</h2>
+                        <p>₹100</p>
+                    </div>
+                    <div class="sbc_product freshnuts">
+                        <img src="Images/nuts3.webp" alt="">
+                        <h2>Walnuts</h2>
+                        <p>₹100</p>
+                    </div>
+                    <div class="sbc_product freshnuts">
+                        <img src="Images/nuts4.jpg" alt="">
+                        <h2>Cashew</h2>
+                        <p>₹100</p>
+                    </div>
+                </div>
+                <div class="sbc_product_container leafygreen_container">
+                    <div class="sbc_product leafygreen">
+                        <img src="Images/leaf1.jpg" alt="">
+                        <h2>Spinach</h2>
+                        <p>₹100</p>
+                    </div>
+                    <div class="sbc_product leafygreen">
+                        <img src="Images/leaf2.jpg" alt="">
+                        <h2>Drumstick Leaves</h2>
+                        <p>₹100</p>
+                    </div>
+                    <div class="sbc_product leafygreen">
+                        <img src="Images/leaf3.webp" alt="">
+                        <h2>Cabbage</h2>
+                        <p>₹100</p>
+                    </div>
+                    <div class="sbc_product leafygreen">
+                        <img src="Images/leaf4.jpg" alt="">
+                        <h2>Collard Greens</h2>
+                        <p>₹100</p>
+                    </div>
+                </div>
+                <div class="sbc_product_container root_container">
+                    <div class="sbc_product root">
+                        <img src="Images/root1.webp" alt="">
+                        <h2>Beetroot</h2>
+                        <p>₹100</p>
+                    </div>
+                    <div class="sbc_product root">
+                        <img src="Images/root2.jpg" alt="">
+                        <h2>Carrot</h2>
+                        <p>₹100</p>
+                    </div>
+                    <div class="sbc_product root">
+                        <img src="Images/root3.jpg" alt="">
+                        <h2>Radish</h2>
+                        <p>₹100</p>
+                    </div>
+                    <div class="sbc_product root">
+                        <img src="Images/root4.jpg" alt="">
+                        <h2>Ginger</h2>
+                        <p>₹100</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer Information Section -->
+
+    <section class="info_container">
+        <div class="info_title info_column">
+            <h2 class="info_title_1">Grocery<Span>Store</Span></h2>
+            <span>Welcome to your one-stop online store for fresh groceries.</span>
+            <div class="info_title_icons">
+                <i class='bx bxl-facebook-square'></i>
+                <i class='bx bxl-instagram-alt'></i>
+                <i class='bx bxl-pinterest'></i>
+            </div>
+        </div>
+        <div class="info_information info_column">
+            <h3>Information</h3>
+            <p>About Us</p>
+            <p>Contact Us</p>
+            <p>Customer Support</p>
+        </div>
+        <div class="info_popular info_column">
+            <h3>Popular</h3>
+            <p>Vegetables</p>
+            <p>Fruits</p>
+            <p>Freshnuts</p>
+        </div>
+        <div class="info_branch info_column">
+            <h3>Branch</h3>
+            <p>Chennai</p>
+            <p>Bangalore</p>
+            <p>Mumbai</p>
+        </div>
+    </section>
+
+    <!-- JavaScript-->
+    <script src="Home.js"></script>
+</body>
+
+</html>
